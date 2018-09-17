@@ -1,0 +1,96 @@
+{
+  "name": "burn",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "ios": "cd ios && open burn.xcodeproj",
+    "lint": "eslint src",
+    "pretty": "prettier --semi false --print-width 100 --single-quote--trailing-comma all --write \"src/**/*.js\"",
+    "precommit": "lint-staged",
+    "flow": "flow",
+    "flow-stop": "flow stop",
+    "test:unit": "jest",
+    "test": "lint && jest && detox",
+    "test:e2e": "detox test -c ios.sim.debug",
+    "test:e2e:build": "detox build"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn pretty",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "docz-theme-default": "^0.10.3",
+    "entities": "^1.1.1",
+    "react": "16.4.1",
+    "react-art": "^16.4.2",
+    "react-native": "0.56.0",
+    "react-native-animatable": "^1.3.0",
+    "react-native-vector-icons": "^5.0.0",
+    "react-native-web": "^0.8.9",
+    "react-navigation": "^2.11.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^3.4.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-react-native-web": "^0.8.9",
+    "babel-preset-flow": "^6.0.0",
+    "babel-preset-react-native": "^5",
+    "detox": "^8.2.3",
+    "docz": "^0.10.3",
+    "docz-core": "^0.10.3",
+    "enzyme": "^3.5.0",
+    "enzyme-adapter-react-16": "^1.3.0",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "flow-bin": "0.75.0",
+    "husky": "^0.14.3",
+    "jest": "23.5.0",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2",
+    "react-dom": "^16.4.2",
+    "react-test-renderer": "^16.4.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    },
+    "preset": "react-native",
+    "testMatch": [
+      "**/?(*.)test.js?(x)"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "<rootDir>/jest/setup.js"
+    ]
+  },
+  "detox": {
+    "test-runner": "jest",
+    "runner-config": "e2e/config.json",
+    "specs": "e2e",
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/burn.app",
+        "build": "xcodebuild -project ios/g2iTrivia.xcodeproj -scheme burn -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone 7"
+      }
+    }
+  }
+}

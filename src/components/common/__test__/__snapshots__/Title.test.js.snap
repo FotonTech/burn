@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Title correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#ffffff",
+        "fontSize": 40,
+        "textAlign": "center",
+      },
+      undefined,
+    ]
+  }
+>
+  This is my title
+</Text>
+`;

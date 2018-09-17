@@ -1,0 +1,26 @@
+---
+name: Button
+---
+import { PropsTable, Playground } from 'docz'
+import Button from './Button'
+import Title from './Title'
+
+## Properties
+<PropsTable of={Button} />
+
+## Basic usage
+<Playground>
+  <Button text="Button text"/>
+</Playground>
+
+## Green
+<Playground>
+  <Button text="Button text" isGreen/>
+</Playground>
+
+## With Children
+<Playground>
+  <Button>
+    <Title>Button children text</Title>
+  </Button>
+</Playground>

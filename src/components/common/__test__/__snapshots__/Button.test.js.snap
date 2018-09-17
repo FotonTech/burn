@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders Button with children 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(0, 0, 0, 0.4)",
+      "borderRadius": 50,
+      "opacity": 1,
+      "paddingBottom": 15,
+      "paddingLeft": 25,
+      "paddingRight": 25,
+      "paddingTop": 15,
+    }
+  }
+>
+  <Text>
+    This is the children text
+  </Text>
+</View>
+`;
+
+exports[`<Button /> renders Button with text 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(0, 0, 0, 0.4)",
+      "borderRadius": 50,
+      "opacity": 1,
+      "paddingBottom": 15,
+      "paddingLeft": 25,
+      "paddingRight": 25,
+      "paddingTop": 15,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "fontSize": 20,
+          "fontWeight": "bold",
+        },
+        undefined,
+      ]
+    }
+  >
+    Button text
+  </Text>
+</View>
+`;
+
+exports[`<Button /> renders Button with text and isGreen 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(106,227,104, 0.8)",
+      "borderRadius": 50,
+      "opacity": 1,
+      "paddingBottom": 15,
+      "paddingLeft": 25,
+      "paddingRight": 25,
+      "paddingTop": 15,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "fontSize": 20,
+          "fontWeight": "bold",
+        },
+        undefined,
+      ]
+    }
+  >
+    Button text
+  </Text>
+</View>
+`;
