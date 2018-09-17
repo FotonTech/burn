@@ -65,7 +65,7 @@ To run Flow on the project, you can easily use already prepared scripts from `pa
 
 ```yarn flow```
 
-This starts Flow server and executes Flow checks. To stp Flow server, you can execute:
+This starts Flow server and executes Flow checks. To stop Flow server, you can execute:
 
 ```yarn flow-stop```
 
@@ -107,5 +107,5 @@ Now, just run the test:
 
 This project comes with already prepared `precommit` hook, that runs prettier on  code and then executes unit tests, just before the commit. This will prevent you from commiting badly styled or invalid code to the repo.
 
-Precommit is defined in `package.json`'s `scripts` section and is taking advantage of a package called `lint-staged`. You can fin more info on it [here](https://github.com/okonet/lint-staged).
+Precommit is defined in `package.json`'s `scripts` section and is taking advantage of a package called `lint-staged`. You can find more info on it [here](https://github.com/okonet/lint-staged).
 
