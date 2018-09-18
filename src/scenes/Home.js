@@ -2,9 +2,7 @@
 import * as React from 'react';
 import styled from 'styled-components/native';
 import { connect } from 'react-redux';
-import * as Animatable from 'react-native-animatable';
 import type { NavigationScreenProp } from 'react-navigation';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {
   counterPlusAction,
   counterMinusAction,
