@@ -33,7 +33,7 @@ React Native boilerplate
 
 ## Overview
 
-Welcome to Burn react-native boiplerplate
+Welcome to Burn react-native boilerplate
 
 
 ## Installation
