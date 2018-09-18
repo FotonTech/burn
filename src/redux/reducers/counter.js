@@ -1,25 +1,25 @@
 export const initialState = {
   count: 0,
-}
+};
 
 const actionReducer = (state = initialState, action) => {
-  let newState
+  let newState;
   switch (action.type) {
     case 'COUNTER_MINUS':
       newState = {
         ...state,
         count: state.count - 1,
-      }
-      return newState
+      };
+      return newState;
     case 'COUNTER_PLUS':
       newState = {
         ...state,
         count: state.count + 1,
-      }
-      return newState
+      };
+      return newState;
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default actionReducer
+export default actionReducer;
