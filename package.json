@@ -84,7 +84,7 @@
     "configurations": {
       "ios.sim.debug": {
         "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/burn.app",
-        "build": "xcodebuild -project ios/g2iTrivia.xcodeproj -scheme burn -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "build": "xcodebuild -project ios/burn.xcodeproj -scheme burn -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
         "type": "ios.simulator",
         "name": "iPhone 7"
       }
