@@ -105,7 +105,7 @@ Now, just run the test:
 
 ### Pre-commit
 
-This project comes with already prepared `precommit` hook, that runs prettier on  code and then executes unit tests, just before the commit. This will prevent you from commiting badly styled or invalid code to the repo.
+This project comes with already prepared `precommit` hook, that runs prettier on  code and then executes unit tests, just before the commit. This will prevent you from committing badly styled or invalid code to the repo.
 
 Precommit is defined in `package.json`'s `scripts` section and is taking advantage of a package called `lint-staged`. You can find more info on it [here](https://github.com/okonet/lint-staged).
 
