@@ -2,6 +2,9 @@
   "name": "burn",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": ">=9.10.0"
+  },
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "ios": "cd ios && open burn.xcodeproj",
